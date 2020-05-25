@@ -2,6 +2,14 @@ $header_bg: #eef1f3;
 $blue: #0674ec;
 $blue_bg: #1035bf;
 
+@mixin f500 {
+  font-family: 'Quicksand-Medium', sans-serif;
+  font-weight: 500;
+}
 
+@mixin f700 {
+  font-family: 'Quicksand-Bold', sans-serif;
+  font-weight: 700;
+}
 
 
