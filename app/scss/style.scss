@@ -633,10 +633,9 @@
   min-height: 108px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
   .release__title {
     font-size: 30px;
     color: #000;
@@ -645,13 +644,24 @@
   .release__filter {
     font-size: 16px;
     color: #747b86;
-    margin-right: 30px;
+    margin-right: 60px;
   }
 }
 
+
+.release__top {
+display: flex;
+justify-content: space-between;
+}
+
 .release__inner-btn {
+  display: flex;
+  flex-flow: row;
   min-height: 92px;
   margin-bottom: 50px;
+  button:first-child {
+    margin-left: 30px;  
+  }
   button {
     padding: 9px 19px;
     border: none;
@@ -660,24 +670,150 @@
     color: #747b86;
     font-size: 15px;
     cursor: pointer;
-    & + button {
-      margin-right: 10px;
+    margin-right: 9px;
+    outline: none;
+    transition: .3s;
+  }
+  button:hover {
+    background-color: #0674ec;
+    color: #fff;
+  } 
+}
+
+.release__item {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  max-width: 361px;
+  width: 100%;
+  margin-bottom: 31px;
+  &-image {
+    min-height: 230px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    outline: none;
+  }
+  &-content {
+    // margin-left: 30px;  
+    margin-top: 18px;
+  }
+  &-name {
+    margin-bottom: 23px;
+    margin-left: 30px;  
+  }
+  &-title {
+    font-size: 20px;
+    color: #000;    
+    text-decoration: none;
+  }
+  &-author {
+    margin-bottom: 35px;
+    margin-left: 30px;  
+    &--first {
+      width: 30px;
+      height: 30px;
+      text-decoration: none;
+      outline: none;
+      img {
+        margin-bottom: -10px;
+        display: inline-block;
+      }
+      span {
+        padding-left: 5px;
+        color: #000;
+        font-size: 15px;
+      }
+    }  
+    &--second {
+      text-decoration: none;
+      color: #7347c1;
+      font-size: 15px;
+      margin-left: 2px;
+      padding-left: 35px;
+      text-decoration: none;
+      position: relative;
+      outline: none;
     }
   }
+}
 
+.release__item-author--second::before  {
+  content: '\e900';
+  font-family: 'icomoon';
+  font-size: 17px;
+  color: #7347c1;
+  position: absolute;
+  left: 11px;
+  top: -1px;
+}
+
+.release__item-text {
+  margin-left: 30px;  
+  color: #555;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 26px; 
+} 
+
+.release__item-info {
+  padding-top: 16px;
+  border-top: 1px solid #ececec;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding-bottom: 17px;
+  .release__item-price {
+    margin-left: 30px;  
+    text-align: center;
+    font-size: 15px;
+    @include f500;
+    color: #0674ec;
+    padding: 7px 17px;
+    background-color: #e6f1fd;
+    border-radius: 16px;
+    text-decoration: none;
+    margin-right: 13px;
+    outline: none;
+  }
+  .release__item-likes {
+    font-size: 15px;
+    color: #6f7d8d;
+    margin-right: 12px;
+  }
+  .release__item-likes::before {
+    content: '\e813';
+    font-family: 'Linearicons-Free';
+    color: #7f4ec2;
+    font-size: 15px;
+    margin-right: 3px;
+  } 
+  .release__item-rating {
+    .rate-star {
+      padding: 0;
+      }
+  }
+  .release__item-basket {
+    color: #0674ec;
+    font-size: 15px;
+    margin-left: 3px;
+  }
+  .release__item-basket::before {
+    content: '\e82e';
+    font-family: 'Linearicons-Free';
+    color: #0674ec;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 3px;
+  } 
 }
 
 
 
 
 
+
+
 // End magnific-popup Release
-
-
-
-
-
-
-
-
 
