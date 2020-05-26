@@ -94,8 +94,8 @@
     top: -24px;
   } 
   &::before {
-    content: '\f07a';
-    font-family: 'icomoon';
+    content: '\e82e';
+    font-family: 'Linearicons-Free';
     font-size: 20px;
     color: #7e8fa1;
   }
@@ -746,6 +746,16 @@ justify-content: space-between;
   }
 }
 
+.release__item-image:hover {
+    background-image: -moz-linear-gradient( 180deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+    background-image: -ms-linear-gradient( 180deg, #0674ec 0%, #3d5ed7 46%, #7347c1 100%);
+    opacity: 0.9;
+    width: 361px;
+    height: 230px;
+    z-index: 3;
+}
+
 .release__item-author--second::before  {
   content: '\e900';
   font-family: 'icomoon';
@@ -840,13 +850,16 @@ justify-content: space-between;
 }  
 
 
-
-
-
-
-
-
-
-
 // End magnific-popup Release
+.aa img{
+ max-width: 361px;
+ max-height: 230px;
+  // background-color: green;
+  // background-image: url(../images/content/BG_copy-6.png);
 
+}
+
+.aa:hover {
+  background-image: -webkit-linear-gradient( 180deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+  z-index: 5;
+}
