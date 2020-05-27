@@ -1493,4 +1493,22 @@ text-align: center;
 }
 
 //End Protect
+//Start Banner
+.banner {
+  background-color: #000;
+  width: 100%;
+  background-image: -webkit-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+  opacity: 0.902;
+  &__box {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    padding-top: 110px;
+    font-size: 36px;
+  }
+}
 
+
+//End Banner
