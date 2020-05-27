@@ -1192,15 +1192,17 @@ text-align: center;
 .feedback {
   background-color: #fff;
   min-height: 840px;
-  margin-top: 120px;
+  padding-top: 120px;
   &__top {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+    // margin-top: 120px;
     &-title {
       color: #000;
       font-size: 36px;
       margin-bottom: 23px;
+      margin-top: 0;
       span {
         color: $blue;
         }
@@ -1212,6 +1214,11 @@ text-align: center;
       margin-bottom: 53px;
     }
   }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
 }
 
 .feedback__card {
@@ -1219,21 +1226,85 @@ text-align: center;
   min-height: 315px;
   background-color: #fff;
   box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
-  margin-top: 50px;
-  margin-left: 50px;
+  border-radius: 0 4px 4px 0;
+  padding-top: 50px;
+  border-left: 1px solid $blue; 
   .feedback__client {
-    display: flex;
-    
-    
+  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;    
   }
   .feedback__avatar {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 23px;
   }
-
+  .feedback__client-info {
+    max-width: 320px;
+    padding-left: 20px;
+  }
+  .feedback__name {
+    font-size: 20px;
+    color: #000;
+    padding-top: 15px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+  } 
+  .feedback__name::after {
+    content: '\e83f';
+    font-family: "Linearicons-Free";
+    font-size: 60px;
+    color: #e8e8e8;
+    position: absolute;
+    top: 3px;
+    left: 315px;
+  }
+  .feedback__profession {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    padding-top: 15px;
+  }
+  .feedback__text {
+    font-size: 16px;
+    color: #555;
+    line-height: 30px;
+    min-width: 480px;
+    padding-right: 40px;
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
 }
 
-
+.feedback__button {
+  text-align: center;
+  margin-bottom: 140px;
+  &-link {
+    text-decoration: none;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+    background-color: #0674ec;
+    color: #fff;
+    font-size: 16px;
+    padding: 21px 33px;
+    border-radius: 28px;
+    cursor: pointer;
+    outline-color: transparent;
+    transition: .5s;
+  }
+  &-link:hover {
+    background-color: #fff;
+    color: #0674ec;
+  } 
+}
 
 //End Feedback
+//Start News
+
+
+
+
+
+
+//End News
