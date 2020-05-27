@@ -1127,8 +1127,6 @@ text-align: center;
 //End Advantages
 //Start Market 
 
-
-
 .market__wrapper {
   width: 100%;
   display: flex;
@@ -1184,16 +1182,58 @@ text-align: center;
   } 
 }
 
-
-
-
 .market__item--purple .market__item-btn {
   color: #7347c1;
 }
 
-
-
-
-
 //End Market
+//Start Feedbaack
 
+.feedback {
+  background-color: #fff;
+  min-height: 840px;
+  margin-top: 120px;
+  &__top {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    &-title {
+      color: #000;
+      font-size: 36px;
+      margin-bottom: 23px;
+      span {
+        color: $blue;
+        }
+    }
+    &-text {
+      color: #555;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 53px;
+    }
+  }
+}
+
+.feedback__card {
+  max-width: 555px;
+  min-height: 315px;
+  background-color: #fff;
+  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-left: 50px;
+  .feedback__client {
+    display: flex;
+    
+    
+  }
+  .feedback__avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+
+
+//End Feedback
