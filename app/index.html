@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compable" content="ie=edge">
   <title>MartPlace</title>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -17,19 +16,22 @@
     <div class="header__top">
       <div class="container">
         <div class="header__top-inner">
-          <div class="header__logo">
-            <a href="#">
-              <img src="images/logo.png" alt="">
-            </a>
-          </div>
+          <a class="header__logo" href="#">
+            <img src="images/logo.png" alt="">
+          </a>
 
           <div class="header__box">
-            <a class="header__btn botton" href="#">Become a Seller</a>
-            <div class="header__icon">
+            <a class="header__btn button" href="#">Become a Seller</a>
+            <div class="header__icons">
+              <a href="#" class="header__icon header__icon--ring"><span>25</span></a>
+              <a href="#" class="header__icon header__icon--mail"><span>6</span></a>
+              <a href="#" class="header__icon header__icon--basket"><span>2</span></a>
+            </div>
+            <!-- <div class="header__icon">
               <a href="#" class="header__icon--ring"><span class="header__icon--number">25</span></a>
               <a href="#" class="header__icon--mail"><span class="header__icon--number">6</span></a>
               <a href="#" class="header__icon--basket"><span class="header__icon--number">2</span></a>
-            </div>
+            </div> -->
             <div class="header__user user">
               <a href="#" class="user__avatar">
                 <img src="images/content/user.png" alt="">
@@ -51,7 +53,7 @@
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                  HOME
+                  home
                 </a>
               </li>
               <li class="menu__item">
@@ -100,9 +102,9 @@
         <div class="search__inner-text">
           MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
         </div>
-        <div class="search__inner-btn">
-          <button type="button">View All Products</button>
-          <button type="button">Popular Products</button>
+        <div class="search__inner-btn button">
+          <a class="button__link" href="#">View All Products</a>
+          <a class="button__link" href="#">Popular Products</a>
         </div>
         <div class="search__inner--box">
           <div class="search__inner-form">
@@ -190,20 +192,20 @@
 
             <div class="product__item">
               <div class="product__item-content">
-                <div class="product__item-image">
-                  <a href="#"><img src="images/content/BG_copy-6.png" alt="product"></a>
-                </div>
-                <div class="product__cart">
-                  <div class="product__cart-title">
-                    <a href="#">One Page Resume Template</a>
-                  </div>
+                <a class="product__item-image" href="#">
+                  <img src="images/content/BG_copy-6.png" alt="product">
+                </a>
 
+                <div class="product__cart">
+                  <a class="product__cart-title" href="#">
+                    One Page Resume Template
+                  </a>
                   <div class="product__cart-author">
-                    <a href="#" class="product__cart-author--first">
+                    <a href="#" class="product__cart-celler">
                       <img src="images/content/user_02.png" alt="">
-                      <span class="product__cart-author--name"> AazzTech</span>
+                      <span> AazzTech</span>
                     </a>
-                    <a href="#" class="product__cart-author--second">WordPress</a>
+                    <a href="#" class="product__cart-platform">WordPress</a>
                   </div>
 
                   <div class="product__cart-text">
@@ -235,9 +237,7 @@
                     <div class="product__cart-basket">
                       634
                     </div>
-                    <div class="product__cart-rating">
-                      <div class="rate-star"></div>
-                    </div>
+                    <div class="rate-star"></div>
                   </div>
                 </div>
               </div>
@@ -245,20 +245,20 @@
 
             <div class="product__item">
               <div class="product__item-content">
-                <div class="product__item-image">
+                <a class="product__item-image" href="#">
                   <img src="images/content/BG_copy-6.png" alt="product">
-                </div>
+                </a>
                 <div class="product__cart">
-                  <div class="product__cart-title">
+                  <a class="product__cart-title" href="#">
                     One Page Resume Template
-                  </div>
+                  </a>
 
                   <div class="product__cart-author">
-                    <a href="#" class="product__cart-author--first">
+                    <a href="#" class="product__cart-celler">
                       <img src="images/content/user_02.png" alt="">
-                      <span class="product__cart-author--name"> AazzTech</span>
+                      <span> AazzTech</span>
                     </a>
-                    <a href="#" class="product__cart-author--second">WordPress</a>
+                    <a href="#" class="product__cart-platform">WordPress</a>
                   </div>
 
                   <div class="product__cart-text">
@@ -290,9 +290,7 @@
                     <div class="product__cart-basket">
                       634
                     </div>
-                    <div class="product__cart-rating">
-                      <div class="rate-star"></div>
-                    </div>
+                    <div class="rate-star"></div>
                   </div>
                 </div>
               </div>
@@ -318,20 +316,24 @@
 
       <div class="release__inner">
         <div class="release__inner-btn">
-          <button type="button" data-filter=".category-plugins">Plugins</button>
-          <button type="button" data-filter=".category-wordpress">WordPress</button>
-          <button type="button" data-filter=".category-sitetemplate">Site Template</button>
-          <button type="button" data-filter=".category-psdtemplate">PSD Template</button>
-          <button type="button" data-filter=".category-joomla">Joomla</button>
-          <button type="button" data-filter=".category-userinterface">User Interface</button>
-          <button type="button" data-filter=".category-landingpage">Landing Page</button>
-          <button type="button" data-filter=".category-software">Software</button>
+          <button class="release__inner-button" type="button" data-filter=".category-plugins">Plugins</button>
+          <button class="release__inner-button" type="button" data-filter=".category-wordpress">WordPress</button>
+          <button class="release__inner-button" type="button" data-filter=".category-sitetemplate">Site
+            Template</button>
+          <button class="release__inner-button" type="button" data-filter=".category-psdtemplate">PSD Template</button>
+          <button class="release__inner-button" type="button" data-filter=".category-joomla">Joomla</button>
+          <button class="release__inner-button" type="button" data-filter=".category-userinterface">User
+            Interface</button>
+          <button class="release__inner-button" type="button" data-filter=".category-landingpage">Landing Page</button>
+          <button class="release__inner-button" type="button" data-filter=".category-software">Software</button>
         </div>
 
         <div class="release__inner-box">
           <div class="release__item mix category-plugins category-new">
             <div class="release__item-img">
-              <a class="release__item-image" style="background-image: url(images/content/BG_copy.png);" href="#"></a>
+              <a class="release__item-image" href="#">
+                <img src="images/content/BG_copy.png" alt="product">
+              </a>
               <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
@@ -348,12 +350,13 @@
                 </a>
               </div>
               <div class="release__item-author">
-                <a href="#" class="release__item-author--first">
+                <a href="#" class="release__item-celler">
                   <img src="images/content/user_02.png" alt="">
-                  <span class="release__item-author--name">Theme-Valley</span>
+                  <span>Theme-Valley</span>
                 </a>
-                <a href="#" class="release__item-author--second">Plugins</a>
+                <a href="#" class="release__item-category">Plugins</a>
               </div>
+
               <p class="release__item-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                 the mattis, leo quam aliquet congue.
@@ -365,9 +368,7 @@
                 <div class="release__item-likes">
                   90
                 </div>
-                <div class="release__item-rating">
-                  <div class="rate-star"></div>
-                </div>
+                <div class="rate-star"></div>
                 <div class="release__item-basket">
                   246
                 </div>
@@ -376,7 +377,9 @@
           </div>
           <div class="release__item mix category-psdtemplate category-new">
             <div class="release__item-img">
-              <a class="release__item-image" style="background-image: url(images/content/BG_copy_2.png);" href="#"></a>
+              <a class="release__item-image" href="#">
+                <img src="images/content/BG_copy_2.png" alt="product">
+              </a>
               <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
@@ -393,11 +396,11 @@
                 </a>
               </div>
               <div class="release__item-author">
-                <a href="#" class="release__item-author--first">
+                <a href="#" class="release__item-celler">
                   <img src="images/content/user_02.png" alt="">
-                  <span class="release__item-author--name">EchoTheme</span>
+                  <span>EchoTheme</span>
                 </a>
-                <a href="#" class="release__item-author--second">PSD</a>
+                <a href="#" class="release__item-category">PSD</a>
               </div>
               <p class="release__item-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -410,9 +413,7 @@
                 <div class="release__item-likes">
                   48
                 </div>
-                <div class="release__item-rating">
-                  <div class="rate-star"></div>
-                </div>
+                <div class="rate-star"></div>
                 <div class="release__item-basket">
                   50
                 </div>
@@ -421,7 +422,9 @@
           </div>
           <div class="release__item mix category-sitetemplate category-new">
             <div class="release__item-img">
-              <a class="release__item-image" style="background-image: url(images/content/BG_copy.png);" href="#"></a>
+              <a class="release__item-image" href="#">
+                <img src="images/content/BG_copy.png" alt="product">
+              </a>
               <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
@@ -438,11 +441,11 @@
                 </a>
               </div>
               <div class="release__item-author">
-                <a href="#" class="release__item-author--first">
+                <a href="#" class="release__item-celler">
                   <img src="images/content/user_02.png" alt="">
-                  <span class="release__item-author--name">Artcorner</span>
+                  <span>Artcorner</span>
                 </a>
-                <a href="#" class="release__item-author--second">HTML</a>
+                <a href="#" class="release__item-category">HTML</a>
               </div>
               <p class="release__item-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -455,9 +458,7 @@
                 <div class="release__item-likes">
                   56
                 </div>
-                <div class="release__item-rating">
-                  <div class="rate-star"></div>
-                </div>
+                <div class="rate-star"></div>
                 <div class="release__item-basket">
                   68
                 </div>
@@ -466,7 +467,9 @@
           </div>
           <div class="release__item mix category-joomla category-new">
             <div class="release__item-img">
-              <a class="release__item-image" style="background-image: url(images/content/BG_copy_2.png);" href="#"></a>
+              <a class="release__item-image" href="#">
+                <img src="images/content/BG_copy_2.png" alt="product">
+              </a>
               <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
@@ -483,11 +486,11 @@
                 </a>
               </div>
               <div class="release__item-author">
-                <a href="#" class="release__item-author--first">
+                <a href="#" class="release__item-celler">
                   <img src="images/content/user_02.png" alt="">
-                  <span class="release__item-author--name">Design-Hub</span>
+                  <span>Design-Hub</span>
                 </a>
-                <a href="#" class="release__item-author--second">Plugins</a>
+                <a href="#" class="release__item-category">Plugins</a>
               </div>
               <p class="release__item-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -500,9 +503,7 @@
                 <div class="release__item-likes">
                   90
                 </div>
-                <div class="release__item-rating">
-                  <div class="rate-star"></div>
-                </div>
+                <div class="rate-star"></div>
                 <div class="release__item-basket">
                   45
                 </div>
@@ -511,8 +512,10 @@
           </div>
           <div class="release__item  mix category-psdtemplate category-new">
             <div class="release__item-img">
-              <a class="release__item-image" style="background-image: url(images/content/BG_copy.png);" href="#"></a>
-              <div class="release__item-shadow shadow">
+              <a class="release__item-image" href="#">
+                <img src="images/content/BG_copy.png" alt="product">
+              </a>
+                            <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
                 </a>
@@ -528,11 +531,11 @@
                 </a>
               </div>
               <div class="release__item-author">
-                <a href="#" class="release__item-author--first">
+                <a href="#" class="release__item-celler">
                   <img src="images/content/user_02.png" alt="">
-                  <span class="release__item-author--name">AazzTech</span>
+                  <span>AazzTech</span>
                 </a>
-                <a href="#" class="release__item-author--second">PSD</a>
+                <a href="#" class="release__item-category">PSD</a>
               </div>
               <p class="release__item-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -545,9 +548,7 @@
                 <div class="release__item-likes">
                   48
                 </div>
-                <div class="release__item-rating">
-                  <div class="rate-star"></div>
-                </div>
+                <div class="rate-star"></div>
                 <div class="release__item-basket">
                   50
                 </div>
@@ -556,7 +557,9 @@
           </div>
           <div class="release__item  mix category-landingpage category-new">
             <div class="release__item-img">
-              <a class="release__item-image" style="background-image: url(images/content/BG_copy_2.png);" href="#"></a>
+              <a class="release__item-image" href="#">
+                <img src="images/content/BG_copy_2.png" alt="product">
+              </a>
               <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
@@ -573,11 +576,11 @@
                 </a>
               </div>
               <div class="release__item-author">
-                <a href="#" class="release__item-author--first">
+                <a href="#" class="release__item-celler">
                   <img src="images/content/user_02.png" alt="">
-                  <span class="release__item-author--name">Coder-Lab</span>
+                  <span>Coder-Lab</span>
                 </a>
-                <a href="#" class="release__item-author--second">HTML</a>
+                <a href="#" class="release__item-category">HTML</a>
               </div>
               <p class="release__item-text">
                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -590,9 +593,7 @@
                 <div class="release__item-likes">
                   56
                 </div>
-                <div class="release__item-rating">
-                  <div class="rate-star"></div>
-                </div>
+                <div class="rate-star"></div>
                 <div class="release__item-basket">
                   68
                 </div>
@@ -641,11 +642,11 @@
                   </a>
                 </div>
                 <div class="release__item-author">
-                  <a href="#" class="release__item-author--first">
+                  <a href="#" class="release__item-celler">
                     <img src="images/content/user_02.png" alt="">
-                    <span class="release__item-author--name">Theme-Valley</span>
+                    <span>Theme-Valley</span>
                   </a>
-                  <a href="#" class="release__item-author--second">Plugins</a>
+                  <a href="#" class="release__item-category">Plugins</a>
                 </div>
                 <p class="release__item-text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -658,9 +659,7 @@
                   <div class="release__item-likes">
                     90
                   </div>
-                  <div class="release__item-rating">
-                    <div class="rate-star"></div>
-                  </div>
+                  <div class="rate-star"></div>
                   <div class="release__item-basket">
                     246
                   </div>
@@ -688,11 +687,11 @@
                   </a>
                 </div>
                 <div class="release__item-author">
-                  <a href="#" class="release__item-author--first">
+                  <a href="#" class="release__item-celler">
                     <img src="images/content/user_02.png" alt="">
-                    <span class="release__item-author--name">EchoTheme</span>
+                    <span>EchoTheme</span>
                   </a>
-                  <a href="#" class="release__item-author--second">PSD</a>
+                  <a href="#" class="release__item-category">PSD</a>
                 </div>
                 <p class="release__item-text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -705,9 +704,7 @@
                   <div class="release__item-likes">
                     48
                   </div>
-                  <div class="release__item-rating">
-                    <div class="rate-star"></div>
-                  </div>
+                  <div class="rate-star"></div>
                   <div class="release__item-basket">
                     50
                   </div>
@@ -734,11 +731,11 @@
                   </a>
                 </div>
                 <div class="release__item-author">
-                  <a href="#" class="release__item-author--first">
+                  <a href="#" class="release__item-celler">
                     <img src="images/content/user_02.png" alt="">
-                    <span class="release__item-author--name">Artcorner</span>
+                    <span>Artcorner</span>
                   </a>
-                  <a href="#" class="release__item-author--second">HTML</a>
+                  <a href="#" class="release__item-category">HTML</a>
                 </div>
                 <p class="release__item-text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -751,9 +748,7 @@
                   <div class="release__item-likes">
                     56
                   </div>
-                  <div class="release__item-rating">
-                    <div class="rate-star"></div>
-                  </div>
+                  <div class="rate-star"></div>
                   <div class="release__item-basket">
                     68
                   </div>
@@ -781,11 +776,11 @@
                   </a>
                 </div>
                 <div class="release__item-author">
-                  <a href="#" class="release__item-author--first">
+                  <a href="#" class="release__item-celler">
                     <img src="images/content/user_02.png" alt="">
-                    <span class="release__item-author--name">Design-Hub</span>
+                    <span>Design-Hub</span>
                   </a>
-                  <a href="#" class="release__item-author--second">Plugins</a>
+                  <a href="#" class="release__item-category">Plugins</a>
                 </div>
                 <p class="release__item-text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -798,9 +793,7 @@
                   <div class="release__item-likes">
                     90
                   </div>
-                  <div class="release__item-rating">
-                    <div class="rate-star"></div>
-                  </div>
+                  <div class="rate-star"></div>
                   <div class="release__item-basket">
                     45
                   </div>
@@ -826,11 +819,11 @@
                   </a>
                 </div>
                 <div class="release__item-author">
-                  <a href="#" class="release__item-author--first">
+                  <a href="#" class="release__item-celler">
                     <img src="images/content/user_02.png" alt="">
-                    <span class="release__item-author--name">AazzTech</span>
+                    <span>AazzTech</span>
                   </a>
-                  <a href="#" class="release__item-author--second">PSD</a>
+                  <a href="#" class="release__item-category">PSD</a>
                 </div>
                 <p class="release__item-text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -843,9 +836,7 @@
                   <div class="release__item-likes">
                     48
                   </div>
-                  <div class="release__item-rating">
-                    <div class="rate-star"></div>
-                  </div>
+                  <div class="rate-star"></div>
                   <div class="release__item-basket">
                     50
                   </div>
@@ -872,11 +863,11 @@
                   </a>
                 </div>
                 <div class="release__item-author">
-                  <a href="#" class="release__item-author--first">
+                  <a href="#" class="release__item-celler">
                     <img src="images/content/user_02.png" alt="">
-                    <span class="release__item-author--name">Coder-Lab</span>
+                    <span>Coder-Lab</span>
                   </a>
-                  <a href="#" class="release__item-author--second">HTML</a>
+                  <a href="#" class="release__item-category">HTML</a>
                 </div>
                 <p class="release__item-text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
@@ -889,9 +880,7 @@
                   <div class="release__item-likes">
                     56
                   </div>
-                  <div class="release__item-rating">
-                    <div class="rate-star"></div>
-                  </div>
+                  <div class="rate-star"></div>
                   <div class="release__item-basket">
                     68
                   </div>
@@ -1234,7 +1223,7 @@
               <img src="images/content/support.png" alt="">
             </a>
           </div>
-          <div class="protect__title protect__title--purple">Fast and Friendly 
+          <div class="protect__title protect__title--purple">Fast and Friendly
             <span>Support</span>
           </div>
         </div>
@@ -1243,22 +1232,22 @@
     </div>
   </section>
 
-<section class="banner">
-  <div class="container">
-    <div class="banner__box">
-      <p class="banner__title">
-        Ready to Join Our Marketplace!
-      </p>
-      <p class="banner__text">
-        Over 25,000 designers and developers trust the MartPlace.
-      </p>
-      <div class="banner__btn">
-      <a class="banner__link" href="#">Join Us Today</a>
+  <section class="banner">
+    <div class="container">
+      <div class="banner__box">
+        <p class="banner__title">
+          Ready to Join Our Marketplace!
+        </p>
+        <p class="banner__text">
+          Over 25,000 designers and developers trust the MartPlace.
+        </p>
+        <div class="banner__btn">
+          <a class="banner__link" href="#">Join Us Today</a>
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
 
-</section>
+  </section>
 
 
 
