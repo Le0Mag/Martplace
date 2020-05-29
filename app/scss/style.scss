@@ -23,11 +23,14 @@
   align-items: center;
   margin-top: -3px;
   }
+
   &__btn {
     padding: 12px 18px;  
     border-radius: 18px;
     background-color: $blue;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
   }
+
   &__btn:hover {
     background-color: transparent;
     color: $blue;
@@ -59,8 +62,8 @@
         top: -20px;
       }
       &::before {
-        content: '\f0a2';
-        font-family: 'icomoon';
+        content: '\e858';
+        font-family: 'Linearicons-Free';
         font-size: 20px;
         color: #7e8fa1;
       }
@@ -74,8 +77,8 @@
         top: -20px;
       } 
       &::before {
-        content: '\f003';
-        font-family: 'icomoon';
+        content: '\e818';
+        font-family: 'Linearicons-Free';
         font-size: 20px;
         color: #7e8fa1;
       }
@@ -157,9 +160,9 @@
     color: #333;
     @include f500;
     font-size: 15px;
-    // margin-left: -1px;
     transform-origin: .3s;
   }
+  
   &__link:hover {
     color: $blue;
   }
@@ -265,10 +268,6 @@
     }  
   }
 }
-
-
-
-
 
 .search__inner--box {
   position: relative;
@@ -445,10 +444,7 @@
 
 .product__btn,
 .followers__btn {
-  height: 45px;
-  width: 110px;
-  background-color: #7347c1;
-  border-radius: 50px;
+  display: flex;
   margin-right: 30px;
 }
 
@@ -596,33 +592,25 @@
 
 .slick-btn {
   border: none;
-  color: transparent;
-  outline: none;
-  background: transparent;
-  position: relative;
+  color: #fff;
+  margin-top: 4px;
+  background-color: #7347c1;
   cursor: pointer;
+  padding: 14px 20px;
+  outline: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.slick-btn:hover {
+  background-color: rgba(115, 71, 193, 0.8);
 }
 
 .slick-next {
-  left: 39px;
-  bottom: -14px;
-  &::before {
-    content: "\e876";
-    font-family: 'Linearicons-Free';
-    font-size: 14px;
-    color: #fff;
-  }
+  border-radius: 0px 30px 30px 0;
 }
 
 .slick-prev {
-  left: 17px;
-  bottom: -14px;
-  &::before {
-    content: "\e875";
-    font-family: 'Linearicons-Free';
-    font-size: 14px;
-    color: #fff;
-  }
+  border-radius: 30px 0 0 30px;
 }
 
 //End slider product

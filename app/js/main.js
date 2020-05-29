@@ -2,7 +2,7 @@ $(function(){
 
   $(".rate-star").rateYo({
     rating: 4.5,
-    starWidth: "16px",
+    starWidth: "12px",
     spacing: "3px",
     readOnly: true,
     ratedFill: "#ffc000",
@@ -11,8 +11,8 @@ $(function(){
   $('.product__wrapper').slick({
     dots: false,
     appendArrows: $('.product__btn'),
-    nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
-    prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>'
+    nextArrow: '<button type="button" class="slick-btn slick-next"><span class="lnr lnr-chevron-right"></span></button>',
+    prevArrow: '<button type="button" class="slick-btn slick-prev"><span class="lnr lnr-chevron-left"></span></button>'
     
   });
 
