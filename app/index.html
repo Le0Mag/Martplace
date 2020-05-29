@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compable" content="ie=edge">
   <title>MartPlace</title>
+  <link rel="icon" href="images/fi.png" type="image/x-icon">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -31,7 +32,7 @@
               <a href="#" class="user__avatar">
                 <img src="images/content/user.png" alt="">
               </a>
-              <div class="user__info">
+              <div class="user__info"> 
                 <a href="#" class="user__name">Taofiq Hakim</a>
                 <a href="#" class="user__balance">$20.45</a>
               </div>
@@ -74,15 +75,15 @@
             </ul>
           </nav>
 
-          <div class="menu__search form">
-            <form action=" ">
-              <label for="headersearch"></label>
-                <input class="menu__search-product" type="search" id="headersearch" name="headersearch" placeholder="Search product here..." required>
-                <button class="menu__search-btn" type="submit">
-                <img src="images/search.png" alt="">
-              </button>
+          <div class="menu__search">
+            <form class="form" action=" ">
+                <label>
+                  <input class="menu__search-product" type="search" name="headersearch" placeholder="Search product here..." required>
+                </label>  
+                <button class="menu__search-btn" type="submit"></button>
             </form>
           </div>
+
         </div>
       </div>
     </div>
@@ -108,18 +109,18 @@
 
 
             
-            <form action=" ">
-              <input type="text" placeholder="Search your products..." required>
-
-              <select name="user_profile_color_1">
+            <form class="form" action=" ">
+             <label>
+              <input class="form__search" type="search"  name="search-search" placeholder="Search your products..." required>
+            </label>
+              <select class="form__select" name="user_profile_color_1">
                 <option value="1">All Categories</option>
                 <option value="2">Categorie 1</option>
                 <option value="3">Categorie 2</option>
                 <option value="4">Categorie 3</option>
                 <option value="6">Categorie 4</option>
               </select>
-
-              <button type="submit">
+              <button class="form__btn" type="submit">
                 Search Now
               </button>
             </form>
