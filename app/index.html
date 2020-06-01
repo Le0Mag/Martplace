@@ -30,9 +30,9 @@
             </div>
             <div class="header__user user">
               <a href="#" class="user__avatar">
-                <img src="images/content/user.png" alt="">
+                <img class="user__avatar-img" src="images/content/user.png" alt="">
               </a>
-              <div class="user__info"> 
+              <div class="user__info">
                 <a href="#" class="user__name">Taofiq Hakim</a>
                 <a href="#" class="user__balance">$20.45</a>
               </div>
@@ -77,10 +77,11 @@
 
           <div class="menu__search">
             <form class="form" action=" ">
-                <label>
-                  <input class="menu__search-product" type="search" name="headersearch" placeholder="Search product here..." required>
-                </label>  
-                <button class="menu__search-btn" type="submit"></button>
+              <label>
+                <input class="menu__search-product" type="search" name="headersearch"
+                  placeholder="Search product here..." required>
+              </label>
+              <button class="menu__search-btn" type="submit"></button>
             </form>
           </div>
 
@@ -106,9 +107,10 @@
         <div class="search__inner--box">
           <div class="search__inner-form">
             <form class="form" action=" ">
-             <label>
-              <input class="form__search" type="search"  name="search-search" placeholder="Search your products..." required>
-            </label>
+              <label>
+                <input class="form__search" type="search" name="search-search" placeholder="Search your products..."
+                  required>
+              </label>
               <select class="form__select" name="user_profile_color_1">
                 <option value="1">All Categories</option>
                 <option value="2">Categorie 1</option>
@@ -131,7 +133,7 @@
       <div class="choice__inner">
         <div class="choice__item">
           <div class="choice__picture">
-            <img src="images/item_01.png" alt="Research">
+            <img class="choice__picture-img" src="images/item_01.png" alt="Research">
           </div>
           <div class="choice__title">
             Best UX Research
@@ -145,7 +147,7 @@
 
         <div class="choice__item choice__item--select">
           <div class="choice__picture">
-            <img src="images/item_02.png" alt="comunication">
+            <img class="choice__picture-img" src="images/item_02.png" alt="comunication">
           </div>
           <div class="choice__title">
             Fully Responsive
@@ -159,7 +161,7 @@
 
         <div class="choice__item">
           <div class="choice__picture">
-            <img src="images/item_03.png" alt="market">
+            <img class="choice__picture-img" src="images/item_03.png" alt="market">
           </div>
           <div class="choice__title">
             Buy & Sell Easily
@@ -177,11 +179,11 @@
   <section class="product">
     <div class="container">
       <div class="product__inner">
-        <div class="product__top">
-          <div class="product__title">
+        <div class="product__top top">
+          <div class="product__title top__title">
             Weekly Featured Products
           </div>
-          <div class="product__btn"> </div>
+          <div class="product__btn top__btn"> </div>
         </div>
 
         <div class="product__slider">
@@ -190,7 +192,7 @@
             <div class="product__item">
               <div class="product__item-content">
                 <a class="product__item-image" href="#">
-                  <img src="images/content/BG_copy-6.png" alt="product">
+                  <img class="product__item-img" src="images/content/BG_copy-6.png" alt="product">
                 </a>
 
                 <div class="product__cart">
@@ -198,11 +200,11 @@
                     One Page Resume Template
                   </a>
                   <div class="product__cart-author">
-                    <a href="#" class="product__cart-celler">
-                      <img src="images/content/user_02.png" alt="">
-                      <span> AazzTech</span>
+                    <a class="product__cart-celler" href="#">
+                      <img class="product__cart-celler-img" src="images/content/user_02.png" alt="">
+                      <span class="product__cart-celler-name"> AazzTech</span>
                     </a>
-                    <a href="#" class="product__cart-platform">WordPress</a>
+                    <a class="product__cart-platform" href="#">WordPress</a>
                   </div>
 
                   <div class="product__cart-text">
@@ -252,8 +254,8 @@
 
                   <div class="product__cart-author">
                     <a href="#" class="product__cart-celler">
-                      <img src="images/content/user_02.png" alt="">
-                      <span> AazzTech</span>
+                      <img class="product__cart-celler-img" src="images/content/user_02.png" alt="">
+                      <span class="product__cart-celler-name"> AazzTech</span>
                     </a>
                     <a href="#" class="product__cart-platform">WordPress</a>
                   </div>
@@ -327,10 +329,10 @@
 
         <div class="release__inner-box">
           <div class="release__item mix category-plugins category-new">
-            <div class="release__item-img">
-              <a class="release__item-image" href="#">
-                <img src="images/content/BG_copy.png" alt="product">
-              </a>
+            <div class="release__item-img ">
+              <div class="release__image">
+                <img class="release__picture" src="images/content/BG_copy.png" alt="product">
+              </div>
               <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
@@ -349,7 +351,7 @@
               <div class="release__item-author">
                 <a href="#" class="release__item-celler">
                   <img src="images/content/user_02.png" alt="">
-                  <span>Theme-Valley</span>
+                  <span class="release__item-celler-name">Theme-Valley</span>
                 </a>
                 <a href="#" class="release__item-category">Plugins</a>
               </div>
@@ -374,9 +376,9 @@
           </div>
           <div class="release__item mix category-psdtemplate category-new">
             <div class="release__item-img">
-              <a class="release__item-image" href="#">
-                <img src="images/content/BG_copy_2.png" alt="product">
-              </a>
+              <div class="release__image">
+                <img class="release__picture" src="images/content/BG_copy.png" alt="product">
+              </div>
               <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
@@ -419,9 +421,9 @@
           </div>
           <div class="release__item mix category-sitetemplate category-new">
             <div class="release__item-img">
-              <a class="release__item-image" href="#">
-                <img src="images/content/BG_copy.png" alt="product">
-              </a>
+              <div class="release__image">
+                <img class="release__picture" src="images/content/BG_copy.png" alt="product">
+              </div>
               <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
@@ -464,9 +466,9 @@
           </div>
           <div class="release__item mix category-joomla category-new">
             <div class="release__item-img">
-              <a class="release__item-image" href="#">
-                <img src="images/content/BG_copy_2.png" alt="product">
-              </a>
+              <div class="release__image">
+                <img class="release__picture" src="images/content/BG_copy.png" alt="product">
+              </div>
               <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
@@ -495,7 +497,7 @@
               </p>
               <div class="release__item-info">
                 <div class="release__item-price">
-                  $10-50
+                  $10 - 50
                 </div>
                 <div class="release__item-likes">
                   90
@@ -509,10 +511,10 @@
           </div>
           <div class="release__item  mix category-psdtemplate category-new">
             <div class="release__item-img">
-              <a class="release__item-image" href="#">
-                <img src="images/content/BG_copy.png" alt="product">
-              </a>
-                            <div class="release__item-shadow shadow">
+              <div class="release__image">
+                <img class="release__picture" src="images/content/BG_copy.png" alt="product">
+              </div>
+              <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
                 </a>
@@ -540,7 +542,7 @@
               </p>
               <div class="release__item-info">
                 <div class="release__item-price">
-                  $10-50
+                  $10 - 50
                 </div>
                 <div class="release__item-likes">
                   48
@@ -554,9 +556,9 @@
           </div>
           <div class="release__item  mix category-landingpage category-new">
             <div class="release__item-img">
-              <a class="release__item-image" href="#">
-                <img src="images/content/BG_copy_2.png" alt="product">
-              </a>
+              <div class="release__image">
+                <img class="release__picture" src="images/content/BG_copy.png" alt="product">
+              </div>
               <div class="release__item-shadow shadow">
                 <a class="shadow__link" href="#">
                   More Info
@@ -602,7 +604,7 @@
       </div>
 
       <div class="release__button">
-        <button type="button" data-filter=".category-new">All New Products</button>
+        <button class="release__btn" type="button" data-filter=".category-new">All New Products</button>
       </div>
     </div>
   </section>
@@ -610,11 +612,11 @@
   <section class="followers">
     <div class="container">
       <div class="followers__inner">
-        <div class="followers__top">
-          <div class="followers__title">
+        <div class="followers__top top">
+          <div class="followers__title top__title">
             Your Followers Feed
           </div>
-          <div class="followers__btn"> </div>
+          <div class="followers__btn top__btn"> </div>
         </div>
 
         <div class="followers__slider">
@@ -1245,6 +1247,15 @@
     </div>
 
   </section>
+
+
+
+
+
+  <!-- <div class="wrapper exmpl">
+       <a href="#">  <img src="/images/content/EX.png"></a>
+      </div> -->
+
 
 
 

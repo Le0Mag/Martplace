@@ -2,8 +2,8 @@ $(function(){
 
   $(".rate-star").rateYo({
     rating: 4.5,
-    starWidth: "12px",
-    spacing: "3px",
+    starWidth: "13px",
+    spacing: "4px",
     readOnly: true,
     ratedFill: "#ffc000",
   });
