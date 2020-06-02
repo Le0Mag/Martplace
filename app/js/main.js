@@ -21,8 +21,8 @@ $(function(){
     slidesToShow: 3,
     slidesToScroll: 3,
     appendArrows: $('.followers__btn'),
-    nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
-    prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>'
+    nextArrow: '<button type="submit" class="slick-btn slick-next"><span class="lnr lnr-chevron-right"></span></button>',
+    prevArrow: '<button type="submit" class="slick-btn slick-prev"><span class="lnr lnr-chevron-left"></span></button>'
     
 
   });
