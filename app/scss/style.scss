@@ -1596,7 +1596,6 @@
 
 .news {
   background-color: #eff1f5;
-  min-height: 880px;
   padding-top: 116px;
 
   &__top {
@@ -1634,6 +1633,7 @@
     border-radius: 4px;
     max-width: 361px;
     width: 100%;
+    margin-bottom: 115px;
   }
 
   &__item-img {
@@ -1641,37 +1641,41 @@
   }
 
   &__item-image {
-    min-height: 230px;
+    max-height: 230px;
     border-radius: 4px 4px 0 0;
-    background-repeat: no-repeat;
     display: block;
-    background-position: center;
-    background-size: cover;
     outline: none;
+    overflow: hidden;
+  }
+
+  &__item-picture {
+    height: 100%;
+    width: auto;
   }
 
   &__item-content {
-    margin-top: 30px;
-  }
+    margin-top: 25px;  }
   
   &__item-name {
-    margin-bottom: 23px;
     margin-left: 30px;
-    max-width: 300px;
+    max-width: 330px;
+    max-height: 160px;
+    overflow: hidden;
   }
   
   &__item-title {
     font-size: 22px;
+    line-height: 28px;
     color: #000;
     @include f500;
-  }
-  
-  &__item-text {
+   }
+ 
+   &__item-text {
     font-size: 16px;
     color: #555;
     line-height: 30px;
-    max-width: 300px;
-    margin-left: 30px;
+    margin-bottom: 23px;
+    margin-top: 21px;
   }
 
   &__item-info {
@@ -1716,7 +1720,7 @@
   &__item-likes {
     font-size: 15px;
     color: #7e7e7e;
-    margin-right: 30px;
+    margin-right: 16px;
     padding-left: 25px;
     position: relative;
     &::before {
@@ -1760,6 +1764,7 @@
   &__item {
     width: 50%;
     padding-top: 62px;
+    
   }
   &__item:first-child {
     border-right: 1px solid #e8eaf3;
@@ -1783,16 +1788,18 @@
     color: #000;
     margin-bottom: 60px;
     text-align: center;
-    span {
+  }
+
+  &__subtitle {
       color: $blue;
-    }
-    &--purple {
-      span {
-        color: #7347c1;
+      &--purple {
+        span {
+          color: #7347c1;
+        }
       }
     }
   }
-}
+
 
 //End Protect
 //Start Banner
