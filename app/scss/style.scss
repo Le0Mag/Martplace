@@ -1761,45 +1761,64 @@
     display: flex;
     justify-content: space-around;
   }
+
   &__item {
     width: 50%;
     padding-top: 62px;
     
   }
+
   &__item:first-child {
     border-right: 1px solid #e8eaf3;
   }
+
   &__image {
-    text-align: center;
-    margin: 0 auto;
+    margin-left: 188px;
     margin-bottom: 30px;
-    width: 155px;
-    height: 120px;
+    max-width: 155px;
+    max-height: 120px;
+    overflow: hidden;
     transition: 0.3s;
-    &-link {
-      outline: none;
+  }
+
+  &__picture {
+    height: 100%;
+    width: auto;
+  }
+
+  &__support {
+    .protect__picture {
+      padding-left: 12px;
     }
   }
+  
+  &__image-link {
+      outline: none;
+    }
+  
   &__image:hover {
     opacity: 0.5;
   }
+
+
   &__title {
     font-size: 24px;
     color: #000;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
     text-align: center;
+    margin-right: 41px;
+    &--purple {
+      margin-left: 24px;
+      .protect__subtitle {
+        color: #7347c1;
+      } 
+    }
   }
 
   &__subtitle {
       color: $blue;
-      &--purple {
-        span {
-          color: #7347c1;
-        }
-      }
     }
   }
-
 
 //End Protect
 //Start Banner
@@ -1807,34 +1826,36 @@
   background-color: #000;
   width: 100%;
   background-image: -webkit-linear-gradient(180deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
-  opacity: 0.902;
+  opacity: 0.9;
+
   &__box {
     max-width: 600px;
     margin: 0 auto;
   }
+
   &__title {
     text-align: center;
-    padding-top: 110px;
+    padding-top: 107px;
     font-size: 36px;
     margin-bottom: 24px;
     margin-top: 0;
   }
+
   &__text {
     color: #e7e7e7;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
   }
   &__btn {
     text-align: center;
-    padding-bottom: 140px;
+    padding-bottom: 129px;
   }
   &__link {
     text-align: center;
     color: $blue;
     font-size: 16px;
-
-    padding: 21px 43px;
+    padding: 17px 43px;
     background-color: #fff;
     border-radius: 30px;
     align-items: center;
@@ -1843,12 +1864,13 @@
     cursor: pointer;
     outline-color: transparent;
     transition: 0.5s;
-  }
-  &__link:hover {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+    }
   }
 }
+
 
 //End Banner
