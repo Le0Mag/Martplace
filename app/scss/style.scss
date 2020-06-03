@@ -540,7 +540,7 @@
 
   &__cart-platform::before {
     content: "\e900";
-    font-family: "icomoon";
+    font-family: 'icomoon';
     font-size: 17px;
     color: #7347c1;
     position: absolute;
@@ -839,7 +839,7 @@
 
   &__item-category::before {
     content: "\e900";
-    font-family: "icomoon";
+    font-family: 'icomoon';
     font-size: 17px;
     color: #7347c1;
     position: absolute;
@@ -1081,7 +1081,7 @@
 
   &__item-category::before {
     content: "\e900";
-    font-family: "icomoon";
+    font-family: 'icomoon';
     font-size: 17px;
     color: #7347c1;
     position: absolute;
@@ -1885,14 +1885,19 @@
   }
 
   &__column {
-    max-width: 390px;
-    width: 100%;
+    max-width: 370px;
+    color: #ababab;
+  }
+
+  &__column-info {
+    max-width: 270px;
   }
 
   &__column-title {
     font-size: 18px;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
+    color: #fff;
   }
 
   &__logo-img {
@@ -1902,23 +1907,193 @@
 
   &__column-text {
     font-size: 15px;
-    color: #ababab;
+    margin-bottom: 18px;
+    line-height: 28px;
   }
 
+  &__info {
+    font-size: 15px;
+    line-height: 28px;
+    padding-left: 30px;
+ 
+  }
+
+  &__info-phone,
+  &__info-email {
+    color: #ababab;
+    display: inline-block;
+    margin-bottom: 5px;
+    position: relative;
+  }
+
+
+  &__info-phone::before,
+  &__info-email::before,
+  &__info-address::before {
+    content: '\e830';
+    font-size: 16px;
+    font-family: 'Linearicons-Free';
+    color: #ffffff;
+    left: -29px;
+    top: 0;
+    position: absolute;
+  }
+
+  &__info-email::before {
+    content: '\e818';
+  } 
+
+  &__info-address::before {
+    content: '\e833';
+    top: 16px;
+  } 
+
+  &__info-address {
+    margin: 0;
+    position: relative;
+  }
+
+  &__column-menu {
+    max-width: 170px;
+    width: 100%;
+    margin-left: 58px;
+    margin-top: 17px;
+    letter-spacing: .5px;
+  }
+
+  &__column-list,
+  &__column-point,
+  &__social,
+  &__social-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__column-list {
+    padding-top: 3px;
+  }
+
+  &__column-link {
+    color: #ababab;
+    line-height: 32px;
+  }
+
+  &__column-social {
+    padding-left: 10px;
+    margin-top: 15px;
+    .footer__column-title {
+      margin-bottom: 33px;
+      letter-spacing: .7px; 
+    }
+  }
+
+  &__form {
+    margin-top: 28px;
+    position: relative;
+    .form__search {
+      color: #ababab;
+      font-size: 15px;
+      height: 49px;
+      border-radius: 25px;
+      padding-right: 120px;
+
+      &::placeholder {
+        color: #ababab;
+        font-size: 15px;
+      }
+
+      &:focus {
+        background: #e2e2e4;
+      }
+    }
+
+    .form__btn {
+      right: -1px;
+      border-radius: 25px;
+      font-size: 15px;
+      padding: 16px 31px;
+    }
+  }
+
+  &__social {
+    margin-top: 50px;
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+  }
+
+  &__social-link {
+    .link-facebook,
+    .link-twitter,
+    .link-google, 
+    .link-pinterest,
+    .link-linkedin,
+    .link-dribbble {
+        border-radius: 50%;
+        background-color: #395799;
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        top: 0px;
+        &::before {
+          content: '\f09a';
+          font-size: 16px;
+          font-family: 'icomoon';
+          color: #fff;
+          position: absolute;
+          top: 12px;
+          right: 14px;
+        }
+      }
+
+      .link-facebook {
+        &::before {
+          right: 17px;
+        }
+      }
+
+      .link-twitter {
+        background-color: #19b2f5;
+        left: 55px;
+        &::before {
+          content: '\f099';
+        }
+      }
+
+      .link-google {
+        background-color: #f05b44;
+        left: 110px;
+        &::before {
+          content: '\f1a0';
+        }
+      }
+      
+      .link-pinterest {
+        background-color: #9c0c1c;
+        left: 165px;
+        &::before {
+          content: '\f0d2';
+        }
+      }
+
+      .link-linkedin {
+        background-color: #0da6be;
+        left: 220px;
+        &::before {
+          content: '\f0e1';
+        }
+      }
+      
+      .link-dribbble {
+        background-color: #ea4c89;
+        left: 275px;
+        &::before {
+          content: '\f17d';
+        }
+      }
+    }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1933,7 +2108,7 @@
     color: #999;
     font-size: 15px;
     line-height: 27px;
-    padding: 34px 0;
+    padding: 33px 0;
     &--light {
       color: #fff;
     }
