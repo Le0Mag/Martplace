@@ -196,7 +196,12 @@
     &::placeholder {
       color: #898f96;
     }
+
+    &:focus {
+      background: #cbd7f1;
+    }
   }
+
   &__search-btn {
     position: absolute;
     border: none;
@@ -209,6 +214,10 @@
     top: 0px;
     outline-color: transparent;
     cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+
   }
   &__search-btn::before {
     content: "\e86f";
@@ -2046,6 +2055,9 @@
           top: 12px;
           right: 14px;
         }
+        &:hover {
+          opacity: 0.6;
+        }
       }
 
       .link-facebook {
@@ -2095,11 +2107,6 @@
       }
     }
   
-
-
-
-
-
   &__copy {
     background-color: #192027;
     text-align: center;
