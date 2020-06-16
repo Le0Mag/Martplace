@@ -98,11 +98,12 @@
       }
     }
   }
+
   &__user {
-    display: flex;
-    justify-content: space-between;
-    line-height: 22px;
+   line-height: 22px;
+
   }
+   
   &__menu {
     background-color: #fff;
   }
@@ -114,33 +115,180 @@
 }
 
 .user {
-  &__info {
-    margin-top: 7px;
+  position: relative;
+  margin-top: 40px;
+  height: 100px;
+  transition: all 0.5s;
+  &:hover {
+    .user__menu {
+      display: block;
+    }
+  } 
+
+  &__box {
+  display: inline-block;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
   }
   
   &__avatar {
     margin-left: 24px;
-    margin-right: 23px;
+    margin-right: 21px;
     max-width: 50px;
     max-height: 50px;
     margin-top: 3px;
     border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__image {
+    border-style: none;
+  }
+  
+  &__info {
+    margin-top: 8px;
+    margin-right: 3px;
   }
 
   &__name {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     color: #333333;
-    display: block;
   }
 
   &__balance {
-    margin: 0;
-    padding: 0;
     font-size: 15px;
     color: $blue;
   }
+
+  &__menu-list,
+  &__menu-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    line-height: 44px;
+    width: 270px;
+    margin-top: 21px; 
+    padding: 21px;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    border-top: 1px solid $blue;
+    border-radius: 0 0 4px 4px;
+    z-index: 1;
+    right: 0;
+
+  }  
+
+  &__menu-list {
+    position: relative;
+    &::before {
+      content: url(../images/icons/arrow_top.png);
+      position: absolute;
+      top: -53px;
+      right: -15px;
+    }
+  }
+
+  &__menu-link {
+    font-size: 15px;
+    color: #54667a;
+    &--profile,
+    &--dashboard,
+    &--account, 
+    &--purchases,
+    &--favorites, 
+    &--credits, 
+    &--statements,
+    &--upload, 
+    &--edit, 
+    &--withdrawals,
+    &--logout {
+      display: inline-block;
+      max-width: 230px;
+      width: 100%;
+
+      &:hover{
+        background-color: $blue;
+        color: #fff;
+        border-radius: 4px;
+      }
+
+      &::before {
+        content: '\e82a';
+        font-family: 'Linearicons-Free';
+        font-size: 15px;
+        padding-right: 16px;
+        padding-left: 10px;
+      }
+    }
+
+    &--dashboard::before {
+      content: '\e800';
+    }
+
+    &--account::before {
+      content: '\e810';
+    }
+
+    &--purchases::before {
+      content: '\e82e';
+    }
+
+    &--favorites::before {
+      content: '\e813';
+    }
+
+    &--credits::before {
+      content: '\e812';
+    }
+
+    &--statements::before {
+      content: '\e843';
+    }
+
+    &--upload::before {
+      content: '\e866';
+    }
+
+    &--edit::before {
+      content: '\e828';
+    }
+
+    &--withdrawals::before {
+      content: '\e84c';
+    }
+
+    &--logout::before {
+      content: '\e820';
+    }
+  } 
 }
+
+// .user_home_cog_cart_heart_dice_chart_bars_upload {
+//   font-size: 15px;
+//   font-family: "Linearicons";
+//   color: rgb(255, 255, 255);
+//   line-height: 2.933;
+//   text-align: left;
+//   position: absolute;
+//   left: 1288px;
+//   top: 158.627px;
+//   z-index: 450;
+// }
+
+
+
+
+
+
 
 .menu {
   &__inner {
@@ -211,8 +359,8 @@
     height: 46px;
     background-color: $blue;
     border-radius: 23px;
-    right: -1px;
-    top: 0px;
+    right: 0;
+    top: 0;
     outline-color: transparent;
     cursor: pointer;
     &:hover {
