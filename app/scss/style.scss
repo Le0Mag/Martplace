@@ -733,7 +733,8 @@
 
   &__home,
   &__products,
-  &__wordpress {
+  &__wordpress,
+  &__pages {
     position: relative;
     &:hover {
       .menu__drop {
@@ -743,15 +744,16 @@
     }
   }
 
-  // &__products {
-  //   position: relative;
-  //   &:hover {
-  //     .menu__drop {
-  //       top: 16px;
-  //       opacity: 1;
-  //     }
-  //   }
-  // }
+  &__pages {
+    position: relative;
+    &:hover {
+      .menu__drop {
+        top: 16px;
+        left: -450px;
+        opacity: 1;
+      }
+    }
+  }
 
   &__drop {
     width: 270px;
@@ -776,7 +778,7 @@
     position: absolute;
     top: -23px;
     left: -20px;
-  }
+    }
   }
 
   &__drop-link {
@@ -796,6 +798,54 @@
 
     }
   }
+
+  &__pages-drop {
+    width: 1140px;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: none;
+    &::before {
+      content: '';
+      background-color: $blue;
+      height: 1px;
+      width: 1140px;
+      position: absolute;
+      top: -3px;
+      left: 0;
+    }
+    .menu__drop-list::before {
+      display: none;
+    }
+  }
+
+  &__drop-products {
+    margin-right: 30px;
+  }
+
+  &__drop-title {
+    font-size: 16px;
+    color: #000;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+
+  &__drop-info {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e8ebf0;
+  }
+
+  &__drop-column {
+    width: 200px;
+  }  
+
+  &__drop-dashboard {
+    margin-right: 30px;
+  }
+
 }
 
 
