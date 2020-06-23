@@ -652,7 +652,9 @@
   }
 
   &__list,
-  &__item {
+  &__item,
+  &__drop-list,
+  &__drop-item {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -660,12 +662,12 @@
   &__item {
     display: inline-block;
     text-transform: uppercase;
-  
+    // position: relative;
   }
 
   &__link {
     color: #333;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
     transform-origin: 0.3s;
   }
@@ -729,38 +731,55 @@
     left: 29px;
   }
 
-  // &__drop {
+  &__home,
+  &__products,
+  &__wordpress {
+    position: relative;
+    &:hover {
+      .menu__drop {
+        top: 16px;
+        opacity: 1;
+      }
+    }
+  }
+
+  // &__products {
   //   position: relative;
+  //   &:hover {
+  //     .menu__drop {
+  //       top: 16px;
+  //       opacity: 1;
+  //     }
+  //   }
   // }
 
-  &__drop-general {
+  &__drop {
     width: 270px;
     background-color: #fff;
     padding: 20px;
-    border-top: 1px solid $blue;
-    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     border-radius: 0 0 4px 4px;
-  }
-
-  &__home-drop {
-    display: none;
     position: absolute;
-    top: 49px;
     left: 0;
+    top: -9999em;
+    opacity: 0;
+    border-top: 36px solid transparent;
+    transition: 0.5s opacity;
   }
 
-
-
-  
-
-  &__home-list,
-  &__home-item {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  &__drop-list {
+    position: relative;
+  &::before {
+    content: '';
+    background-color: $blue;
+    height: 1px;
+    width: 270px;
+    position: absolute;
+    top: -23px;
+    left: -20px;
+  }
   }
 
-  &__home-link {
+  &__drop-link {
     font-size: 15px;
     line-height: 44px;
     color: #54667a;
@@ -768,6 +787,7 @@
     display: inline-block;
     max-width: 230px;
     width: 100%;
+    text-transform: none;
     &:hover {
       background-color: $blue;
       color: #fff;
