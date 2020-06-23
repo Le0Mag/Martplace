@@ -474,8 +474,6 @@
 
 }
 
-
-
 .button {
   color: #fff;
   text-align: center;
@@ -639,16 +637,20 @@
 }
 
 .menu {
+
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
   }
+
   &__top {
     display: flex;
     margin-top: -4px;
+    position: relative;
   }
+
   &__list,
   &__item {
     margin: 0;
@@ -658,7 +660,9 @@
   &__item {
     display: inline-block;
     text-transform: uppercase;
+  
   }
+
   &__link {
     color: #333;
     font-weight: 500;
@@ -724,7 +728,60 @@
     top: 15px;
     left: 29px;
   }
+
+  // &__drop {
+  //   position: relative;
+  // }
+
+  &__drop-general {
+    width: 270px;
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid $blue;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    border-radius: 0 0 4px 4px;
+  }
+
+  &__home-drop {
+    display: none;
+    position: absolute;
+    top: 49px;
+    left: 0;
+  }
+
+
+
+  
+
+  &__home-list,
+  &__home-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__home-link {
+    font-size: 15px;
+    line-height: 44px;
+    color: #54667a;
+    padding-left: 10px;
+    display: inline-block;
+    max-width: 230px;
+    width: 100%;
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+
+    }
+  }
 }
+
+
+
+
+
 
 // end header
 // start search
